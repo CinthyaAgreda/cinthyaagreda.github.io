@@ -1,5 +1,5 @@
 body {
-    text-emphasis: 16px;
+    font-size: 16px;
     background-color: #847577;
 }
 header,
@@ -7,18 +7,17 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto;
+    
+}
+
+header {
+    background-color: #f4a261;
+    color #264653: 
 }
 
 main section p {
     margin: 5pxs;
     border: 1px #003049;
     padding: 5px;
-    background-color: #003049;
-}
-
-header,
-main,
-footer {
-    max-width: 960px;
-    margin: 0 auto;
+    background-color: #b7b7a4;
 }
