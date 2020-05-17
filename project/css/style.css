@@ -7,12 +7,14 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto;
+    font-family: "Arial Black", Gadget, sans-serif;
     
 }
 
 header {
     background-color: #f4a261;
-    color: #14213d; 
+    color: #14213d;
+    font-family: 'Sofia';font-size: 22px; 
 }
 
 main section p {
@@ -20,4 +22,5 @@ main section p {
     border: 1px #003049;
     padding: 5px;
     background-color: #b7b7a4;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
