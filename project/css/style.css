@@ -31,9 +31,9 @@ header img {
 
 h1 {
     color: #242423;
-    font-family: 'Pacifico', cursive; 
-
+    font-family: 'Pacifico', cursive;
 }
+
 header nav ul {
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@ header nav ul li a {
     padding: .5rem;
 }
 
-a:focus, 
+a:focus,
 
 .active {
     color: yellowgreen;
@@ -75,11 +75,29 @@ footer {
     padding: .8rem;
 }
 
+.contact {
+    margin-left: 0%;
+}
+
+.div {
+    display: block;
+}
+
+.icon {
+    padding-left: 0;
+    display: inline-block;
+}
+
+.indent{
+    margin-left: 4%;
+}
+
 
 .social {
     text-align: right;
-    
+
 }
+
 
 .social img {
     width: 70px;
