@@ -71,7 +71,7 @@ nav a:hover {
 a:focus,
 
 .active {
-    color: #242423(116, 73, 216);
+    color: #242423;
     border-bottom: 1px solid #faf3dd;
     padding-bottom: .1rem;
 }
@@ -90,8 +90,7 @@ header nav ul li a:hover {
     position: absolute;
     top: calc(50% - 20px);
     padding: 5px 20px;
-    left: 40px;
-    color: var(--secondary-color);
+    left: 40px;    
     background: rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
     animation: Action 1s;
@@ -247,3 +246,9 @@ footer {
     width: 70px;
     height: auto;
 }
+
+@media screen and (max-width: 550px) {
+    .______ {
+      display: block;
+    }
+  }
