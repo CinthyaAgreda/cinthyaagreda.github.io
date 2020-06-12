@@ -43,19 +43,91 @@ header nav ul {
 header nav ul li a {
     color: #6d6875;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     display: block;
     padding: .5rem;
 }
 
+nav a:hover {
+    text-shadow: 0.5px 0.5px #242423;
+    color: #0f1113;
+    background: #ceb5a7;
+    box-shadow: 0 0 10px;
+}
+
 a:focus,
 
 .active {
-    color: yellowgreen;
-    border-bottom: 1px solid #ffffff;
-    padding-bottom: .2rem;
+    color:#242423(116, 73, 216);
+    border-bottom: 1px solid #faf3dd;
+    padding-bottom: .1rem;
+}
 
+header nav ul li a:hover {
+    color: #6d6875;
+}
+
+.hero-image {
+    margin-bottom: 40px;
+    position: relative;
+    height: 250px;
+}
+
+.hero-image > .action {
+    position: absolute;
+    top: calc(50% - 20px);
+    padding: 5px 20px;
+    left: 40px;
+    color: var(--secondary-color);
+    background: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+    animation: Action 1s;
+}
+
+.action > h3 {
+    color: #f77f00;
+    font-family: 'Pacifico', cursive;
+}
+
+.action {
+    opacity: 0.75;
+    background-color: #faf3dd;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+@keyframes Action {
+    from {
+        left: -50px;
+        opacity: 0;
+    }
+    50% {
+        left: -50px;
+        opacity: 0;
+    }
+    to {
+        left: 40px;
+        opacity: 0.5;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 main section p {
