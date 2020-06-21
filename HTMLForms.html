@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Week 9 | HTML Forms</title>
 
     <style>
@@ -12,7 +12,7 @@
             width: 400px;
             /* Form outline */
             padding: 1em;
-            border: 1px solid #999;
+            border: 1px solid #CCC;
             border-radius: 1em;
         }
 
@@ -77,32 +77,35 @@
             display: none;
             font: 1em sans-serif;
             color: #E5989B;
+            padding: 1em;
             font-weight: bold;
             text-align: center;
-
         }
     </style>
 </head>
 
-<body data-gr-c-s-loaded="true">
+<body>
     <div id="feedback"></div>
     <form action="/my-handling-form-page" method="post">
         <ul>
-         <li>
-           <label for="name">Name:</label>
-           <input type="text" id="name" name="user_name">
-         </li>
-         <li>
-           <label for="mail">E-mail:</label>
-           <input type="email" id="mail" name="user_email">
-         </li>
-         <li>
-           <label for="msg">Message:</label>
-           <textarea id="msg" name="user_message"></textarea>
-         </li>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Send your message</button>
+            </li>
         </ul>
-       </form>
-       <script>
+    </form>
+    <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
         // get the form element so we can read what was entered in it.
@@ -119,6 +122,6 @@
             feedbackElement.style.display = "block";
         });
     </script>
-    
 </body>
+
 </html>
