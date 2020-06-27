@@ -135,11 +135,16 @@ h3 {
 .wrapper {
     position: relative;
     display: grid;
-    grid-template-rows: 300px 300px 150px;
+    grid-template-rows: 250px 250px 150px;
     grid-gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
+    
+
+    
 }
+
+
 
 .pic1:hover {
     transition: transform .2s;
@@ -247,4 +252,111 @@ footer {
     .______ {
       display: block;
     }
+}
+ 
+
+.wrapper2 {
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+    
+}
+
+.wrapper3 {
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+.pic3:hover {
+    transition: transform .2s;
+    /* animation */
+    transform: scale(1.1)
+}
+
+.pic4:hover {
+    transition: transform .2s;
+    /* animation */
+    transform: scale(1.1)
+}
+.pic5:hover {
+    transition: transform .2s;
+    /* animation */
+    transform: scale(1.1)
+}
+
+.pic6:hover {
+    transition: transform .2s;
+    /* animation */
+    transform: scale(1.1)
+
+}
+
+.amenities {
+    font-size: 1.5rem;
+}
+
+
+.pic7:hover,
+.pic8:hover,
+.pic9:hover,
+.pic10:hover {
+    transition: transform .8s;
+    transform: scale(1.1)
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+
+}
+
+
+.grid-item4,
+.grid-item6 {
+    
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px;
+    padding: 10px;
+}
+.grid-item1,
+.grid-item2,
+.grid-item3 {
+    grid-template-rows: 2rem 5rem;
+}
+
+.pic7,
+.pic8,
+.pic9,
+.pic10 {
+    align-content: center;
+    padding: 10px;
+    margin: 50px 10px;
+}  
+  .grid-item2 {
+      font-size: 1.5rem;
+      margin: 0.5px;
+      
   }
+  .grid-item5 {
+    font-size: 1rem;
+    margin: 2px;
+    border: 1px;
+    text-align: center;
+      
+  }
+
+  .grid-item2>h2 {
+      margin: 2rem;
+      border: 1rem;
+      padding: 1rem;
+  }
+  
