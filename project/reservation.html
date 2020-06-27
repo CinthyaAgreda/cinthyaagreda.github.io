@@ -21,7 +21,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="amenities.html">Amenities</a></li>
                 <li><a href="mytemple.html">Temple Spotlight</a></li>
-                
+
                 <li><a class="active" href="#"></a>Reservations</a></li>
             </ul>
         </nav>
@@ -36,43 +36,65 @@
                 <button>Make a Reservation</button>
             </div>
         </div>
-        <div class="wrapper">
+       
+        <div class="layout4">
             <section>
-                <h2>Amenities at Temples</h2>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Exercise/workout room</li>
-                    <li>Indoor pool</li>
-                    <li>Parking</li>
-                    <li>WiFi high-speed internet access and smart TVs.</li>
-                    <li>Family history consultation and family ordinance card service.</li>
-                        
-                </ul>
-                <br>
-
+                <h2>Reservation Information</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea architecto recusandae delectus sapiente
+                    minus. Minus dolor cumque vero, soluta quasi quis qui explicabo nam rem veniam corrupti mollitia. At
+                    architecto inventore delectus, dicta, impedit cupiditate amet aspernatur facilis tenetur, maiores
+                    corrupti deleniti reiciendis temporibus dolor explicabo non sint voluptates quae.
+                </p>
             </section>
-            </section>
-            <div class="pic3">
-                <img src="images/breakfast (1).jpg" alt="breakfast" width="250" height="150 " alt="breakfast buffet">
+            
+            <div id="feedback">
+                <h2>Make your Reservation!</h2>
+                <form action="reservations_page.php" method="post" target="_blank"
+                    onsubmit="setTimeout(function () { window.location.reload(); }, 10000)">
+                    <ul>
+                        <li>
+                            <label for="name"> Full Name:</label>
+                            <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                            <label for="mail">E-mail Address:</label>
+                            <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </li>
+                        <li>
+                            <label for="quantity">No. of Guests:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5000">
+                        </li>
+                        <li>
+                            <label for="date">Reservation Date</label>
+                            <input type="date" id="date" name="date">
+                        </li>
+                        <li>
+                            <label for="time">Select a time:</label>
+                            <input type="time" id="time" name="time">
+                        </li>
+                        <li>
+                            <label for="msg">Special Request / Instructions:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button2">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
-            <br>
             <section>
-                <div class="pic4">
-                    <img src="images/pool.jpg" width="250" height="150 " alt="indoor pool">
-                </div>
-            
-                
-                    <div class="pic5">
-                        <img src="images/parking.jpg" width="250" height="150 " alt="parking">
-                    </div>
-            
-        
-            <div class="pic6">
-                <img src="images/Room-TV.jpg" width="250" height="150 " alt="parking">
-            </div>
-    
-
-            
+                <h2>Contact Information</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat animi nostrum possimus cumque
+                    doloribus
+                    sed ab eum voluptatibus a? Praesentium sequi neque rerum voluptates ullam fugit quo non inventore
+                    impedit aliquam odit, cum soluta maxime. Eius, aspernatur, sed, illum est cupiditate exercitationem
+                    necessitatibus omnis expedita ea tenetur non numquam? Provident?
+                </p>
+            </section>
         </div>
     </main>
     <footer>
