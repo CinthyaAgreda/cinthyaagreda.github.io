@@ -352,18 +352,20 @@ main div p {
     grid-gap: 1rem;
     padding: 0.1rem;
     margin-top: 0.1rem;
-
-
-
 }
 
 #feedback {
     font: 1em sans-serif;
     color: #241F2D;
-    padding: 1em;
+    padding: 0.5em;
     font-weight: bold;
     text-align: left;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#feedback h2 {
+    
+    margin-top: auto;
 }
 
 form {
@@ -438,9 +440,14 @@ textarea {
     background-color: #b7b7a4;
     padding: 2em;
     text-align: left;
+    margin-top: auto;
 
 }
 
-.layout4 section {
+.layout4 section li {
     padding: 1em;
+    padding-bottom: 0.5px 5px;
+}
+.layout4 h2 {
+    margin-bottom: auto;
 }
