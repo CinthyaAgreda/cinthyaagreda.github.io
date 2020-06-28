@@ -1,8 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Oswald&display=swap');
+
+:root {
+    --primary-color: #36516A;
+    --secondary-color: #33658A;
+    --accent1-color: #F6AE2D;
+    --accent2-color: #847577;
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif
+}
+
+html {
+    background-color: var(--primary-color)
+}
+
 
 body {
     font-size: 16px;
-    background-color: #847577;
+    background-color: var(--accent2-color);
     margin: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,7 +26,7 @@ main,
 footer {
     max-width: 960px;
     margin: 0 auto;
-    font-family: "Arial", Gadget, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -320,11 +334,13 @@ footer {
         
 }
 .grid-item1,
-
+.grid-item4,
+.grid-item6,
 .grid-item3 {
     grid-template-rows: 100px 10px;
     margin: 0.5rem;
 }
+ 
 
 .pic7,
 .pic8,
@@ -332,7 +348,7 @@ footer {
 .pic10 {
     
     padding: 10px;
-    margin: 30px 10px 30px;
+    margin: 30px 10px;
 }
 
 .pic7,
