@@ -1,22 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Oswald&display=swap');
 
-:root {
-    --primary-color: #36516A;
-    --secondary-color: #33658A;
-    --accent1-color: #F6AE2D;
-    --accent2-color: #847577;
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif
-}
-
-html {
-    background-color: var(--primary-color)
-}
-
-
 body {
     font-size: 16px;
-    background-color: var(--accent2-color);
+    background-color: #ceb5a7;
     margin: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -45,15 +31,11 @@ header {
     padding: 0.75rem;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-
-
-
 }
 
 header img {
     width: 100px;
     height: auto;
-
 }
 
 h1 {
@@ -100,14 +82,13 @@ header nav ul li a:hover {
     margin-bottom: 40px;
     position: relative;
     height: 250px;
-    
 }
 
 .hero-image>.action {
     position: absolute;
     top: calc(50% - 20px);
     padding: 5px 10px;
-    left: 40px;    
+    left: 40px;
     background: rgba(0, 0, 0, 0.5);
     transition: all 0.5s;
     animation: Action 1s;
@@ -129,8 +110,6 @@ h3 {
     font-size: 1.17em;
     font-weight: bold;
 }
-
-
 
 @keyframes Action {
     from {
@@ -156,12 +135,7 @@ h3 {
     grid-gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
-    
-
-    
 }
-
-
 
 .pic1:hover {
     transition: transform .2s;
@@ -195,8 +169,6 @@ h3 {
     padding: 3px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     border-radius: 8px;
-
-
 }
 
 h2 {
@@ -211,7 +183,6 @@ h2 {
 .family>h2 {
     text-decoration: none;
 }
-
 
 main section p {
     margin: 5px;
@@ -231,7 +202,6 @@ footer {
     padding: .8rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-
 }
 
 .contact {
@@ -251,12 +221,10 @@ footer {
     margin-left: 4%;
 }
 
-
 .social {
     text-align: right;
 
 }
-
 
 .social img {
     width: 70px;
@@ -265,10 +233,9 @@ footer {
 
 @media screen and (max-width: 550px) {
     .______ {
-      display: block;
+        display: block;
     }
 }
- 
 
 .wrapper2 {
     position: relative;
@@ -277,7 +244,7 @@ footer {
     grid-gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
     padding: 0.5rem;
-    
+
 }
 
 .wrapper3 {
@@ -288,6 +255,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
 }
+
 .pic3:hover {
     transition: transform .2s;
     /* animation */
@@ -299,6 +267,7 @@ footer {
     /* animation */
     transform: scale(1.1)
 }
+
 .pic5:hover {
     transition: transform .2s;
     /* animation */
@@ -331,8 +300,9 @@ footer {
     grid-gap: 1px;
     padding: 3px;
     margin: 0.1rem;
-        
+
 }
+
 .grid-item1,
 .grid-item4,
 .grid-item6,
@@ -340,49 +310,41 @@ footer {
     grid-template-rows: 100px 10px;
     margin: 0.5rem;
 }
- 
+
 
 .pic7,
 .pic8,
 .pic9,
 .pic10 {
-    
+
     padding: 10px;
     margin: 30px 10px;
 }
 
-.pic7,
-.pic8 {
-    align-items: left;
-
-}
-   
-  .grid-item5 {
+.grid-item5 {
     font-size: 0.95rem;
     margin: 1px;
     border: 1px;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-      
-  }
+}
 
-  .grid-item2 h2 {
+.grid-item2 h2 {
     text-align: center;
     font-size: 50px;
     margin: 100px 10px 10px;
+}
 
-      
-  }
-  main div p {
+main div p {
     margin: 5px;
     border: 0.2px solid #003049;
     padding: 5px;
     background-color: #b7b7a4;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     border-radius: 3px;
-    }
+}
 
-   .layout4 {
+.layout4 {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -390,11 +352,12 @@ footer {
     grid-gap: 1rem;
     padding: 0.1rem;
     margin-top: 0.1rem;
-    
 
-    
-   } 
-   #feedback {
+
+
+}
+
+#feedback {
     font: 1em sans-serif;
     color: #241F2D;
     padding: 1em;
@@ -402,6 +365,7 @@ footer {
     text-align: left;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+
 form {
     margin-top: 2rem;
     margin-left: 1rem;
@@ -412,53 +376,59 @@ form {
     border: 3px solid #f4a261;
     border-radius: 1em;
 }
+
 form ul {
     list-style: none;
     padding: 0;
     margin: 0;
 
 }
+
 form li+li {
     margin-top: 1em;
 }
+
 label {
     display: inline-block;
     width: 130px;
     text-align: right;
 }
+
 input,
 textarea {
     font: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999;
-    }
-    input:focus,
-    textarea:focus {
-        border-color: #000;
-    }
+}
 
-    textarea {
-        vertical-align: top;
-        height: 10em;
-    }
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
 
-    .button2 button {
-        padding: 4px;
-        margin-left: 9em;
-        line-height: 1em;
-        width: 6em;
-        background-color: #f4a261;
-        font-size: 1em;
-        border-radius: 30px;
-        text-align: center;
-    }
-    .button2 button:hover {
-        transition: transform .2s;
-        transform: scale(1.1);
-    }
+textarea {
+    vertical-align: top;
+    height: 10em;
+}
 
-    .layout4 section ul {
+.button2 button {
+    padding: 4px;
+    margin-left: 9em;
+    line-height: 1em;
+    width: 6em;
+    background-color: #f4a261;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.button2 button:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+.layout4 section ul {
     grid-column: 1/3;
     text-align: left;
     line-height: 1rem;
@@ -468,10 +438,9 @@ textarea {
     background-color: #b7b7a4;
     padding: 2em;
     text-align: left;
-    
-    }
-    .layout4 section {
-        padding: 1em;
-    }
 
-    
+}
+
+.layout4 section {
+    padding: 1em;
+}
