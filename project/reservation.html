@@ -21,7 +21,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="amenities.html">Amenities</a></li>
                 <li><a href="mytemple.html">Temple Spotlight</a></li>
-
                 <li><a class="active" href="#"></a>Reservations</a></li>
             </ul>
         </nav>
@@ -38,14 +37,7 @@
         </div>
        
         <div class="layout4">
-            <section>
-                <h2>Reservation Information</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea architecto recusandae delectus sapiente
-                    minus. Minus dolor cumque vero, soluta quasi quis qui explicabo nam rem veniam corrupti mollitia. At
-                    architecto inventore delectus, dicta, impedit cupiditate amet aspernatur facilis tenetur, maiores
-                    corrupti deleniti reiciendis temporibus dolor explicabo non sint voluptates quae.
-                </p>
-            </section>
+           
             
             <div id="feedback">
                 <h2>Make your Reservation!</h2>
@@ -61,7 +53,7 @@
                             <input type="email" id="mail" name="user_email">
                         </li>
                         <li>
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">Phone Number:</label>
                             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                         </li>
                         <li>
@@ -69,7 +61,7 @@
                             <input type="number" id="quantity" name="quantity" min="1" max="5000">
                         </li>
                         <li>
-                            <label for="date">Reservation Date</label>
+                            <label for="date">Reservation Date:</label>
                             <input type="date" id="date" name="date">
                         </li>
                         <li>
@@ -87,13 +79,16 @@
                 </form>
             </div>
             <section>
-                <h2>Contact Information</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat animi nostrum possimus cumque
-                    doloribus
-                    sed ab eum voluptatibus a? Praesentium sequi neque rerum voluptates ullam fugit quo non inventore
-                    impedit aliquam odit, cum soluta maxime. Eius, aspernatur, sed, illum est cupiditate exercitationem
-                    necessitatibus omnis expedita ea tenetur non numquam? Provident?
-                </p>
+                <h2>Reservation Information</h2>
+                <ul>
+                    <li>Reservations requests must be sent 3 days in advance.</li><br>
+                    <li>Only people with recommendation can enter into the Wedding reception room.</li><br>
+                    <li>Babysitting room has capacity for 20 children from 3 - 36 months.</li><br>
+                    <li>Breakfast buffet is open from 7 - 10 am.</li><br>
+                    <li>Indoor Pool has tempered water.</li><br>
+                    <li>You are free to bring your own food and use the kitchenette inside the rooms.</li><br>
+                    <li>We are closed twice a year for 15 days; March from 1-15 and September from 15-30. Consider this information before making a reservation.</li><br>
+                    <li>Always closed on Sundays and Mondays.</li><br>
             </section>
         </div>
     </main>
@@ -130,6 +125,16 @@
 
 
     </footer>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value +
+                '! Your Reservation has been made! We will send you a confirmation email soon!';
+            feedbackElement.style.display = "block";
+        });
+    </script>
 </body>
 
 </html>
