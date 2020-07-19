@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --primary-color: #78cdd7;
+    --secondary-color: #004e89;
+    --accent1-color: #F77F00;
+    --accent2-color: #003049;
+    --heading-font: 'Indie Flower', 'serif';
+    --paragraph-font:'Raleway', sans-serif;
+}
+
+html {
+    background-color: var(--primary-color)
+}
+
+body {
+    font-size: 16px;
+    background-color: #78cdd7 ;
+    font-family: 'Raleway', sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:#003049;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    justify-content: space-around;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+ .setup {
+     display: grid;
+     grid-template-columns: 90px 300px;
+     align-content: center;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+ }
+.setup > img {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+h1 {
+    color: whitesmoke;
+    padding: 0px;
+    font-family: 'Indie Flower', 'serif';
+    font-size: 3em;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+nav>ul {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    margin: auto;
+
+}
+
+nav>ul>li {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+nav>ul>li>a {
+    color: whitesmoke;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Indie Flower', cursive;
+    display: block;
+
+}
+
+nav a:hover {
+    color: #241F2D;
+    background-color: #F77F00;
+    border-radius: 5px;
+}
+
+
+.active {
+    color: #9DC6EC;
+    border-bottom: 1px solid #9DC6EC;
+    padding-bottom: 0.75rem;
+}
+
+main,
+footer {
+    background-color: white;
+    padding: 0.75em;
+}
+
+.hero {
+    width: 980px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.heroimg {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: whitesmoke;
+    opacity: 0.85;
+    margin: 5rem 6rem;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Indie Flower', 'serif';
+    border-radius: 10px;
+}
+
+.action button {
+    line-height: 2em;
+    width: 8em;
+    text-shadow: 1px 1px 120px;
+    background-color: #df8b3e;
+    font-size: 1.2em;
+    border-radius: 30px;
+    font-family:'Raleway', sans-serif;
+}
+
+.action button:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 320px 320px ;
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.pic1, .pic2 {
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: 0.5px solid #ccc;
+    padding: 2px 2px;
+    box-shadow: 5px 5px 5px #999;
+ 
+}
+
+.headline h1 {
+    color: #F77F00;
+    padding: 40px 10px 15px 10px;
+    font-family: 'Indie Flower', 'serif'; 
+    text-align: center;
+    margin: auto;
+}
+
+.headline h1:hover {
+    transition: transform .5s;
+    transform: scale(1.5);
+}
+
+h2 {
+    font-family: 'Indie Flower', 'serif';
+    color: #004e89;
+    padding: 0.25rem;
+    text-align: center;
+    
+}
+
+.letter h2 {
+    font-size: 50px;
+    color: #F77F00;
+       
+}
+
+
+main section p {
+    background-color: white;
+    text-align: center;
+    padding: 0.25rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2rem;
+    margin: auto;
+}
+
+footer {
+    background-color: #004e89;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact {
+    text-align: center;
+    padding: 0.25em;
+}
+
+.social {
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.social img {
+    width: 50px;
+    height: auto;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    grid-column: 1/3;
+}
+
+@media screen and (max-width: 550px) {
+    .______ {
+        display: block;
+    }
+}
+
+.layout2 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+main section ul li {
+    background-color: white;
+    padding: 0.25rem;
+    font-family: 'Lora', 'Times New Roman', 'serif';
+    line-height: 1.3rem;
+    margin: auto;
+}
+
+.pic3,
+.pic4 {
+    display: block;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
+}
+
+.layout3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 1rem;
+    padding: 0.50rem;
+}
+
+.pic7,
+.pic8,
+.pic9 {
+    width: 95%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+
+}
+
+.pic7:hover,
+.pic8:hover,
+.pic9:hover {
+    transition: transform .8s;
+    transform: scale(1.1)
+}
+
+.layout4 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 1rem;
+    padding: 0.50rem;
+}
+
+#feedback {
+    font: 1em sans-serif;
+    color: #241F2D;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 450px;
+    /* Form outline */
+    padding: 1em;
+    border: 3px solid #1571C6;
+    border-radius: 1em;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+form li+li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 10em;
+}
+
+.button2 button {
+    padding: 4px;
+    margin-left: 9em;
+    line-height: 1em;
+    width: 6em;
+    background-color: #df8b3e;
+    opacity: 0.85;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.button2 button:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
+}
