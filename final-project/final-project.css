@@ -286,7 +286,8 @@ main section ul li {
     margin: auto;
 
 }
-
+.pic1:hover,
+.pic2:hover,
 .pic7:hover,
 .pic8:hover,
 .pic9:hover {
@@ -374,3 +375,13 @@ textarea {
     transition: transform .2s;
     transform: scale(1.1);
 }
+
+.high h2{
+    font-size: 40px;
+}
+
+h2:hover {
+    transition: transform .4s;
+    transform: scale(1.5);
+}
+
