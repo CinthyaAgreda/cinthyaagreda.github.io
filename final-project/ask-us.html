@@ -26,56 +26,71 @@
         <nav>
             <ul>
                 <li>
-                    <a class="active" href="#">Home</a>
+                    <a href="home.html">Home</a>
                 </li>
                 <li>
                     <a href="places.html">Places</a>
                 </li>
-
                 <li>
-                    <a href="ask-us.html">Ask Us</a>
+                    <a class="active" href="ask-us.html">Ask Us</a>
                 </li>
-
             </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
             <img class="heroimg" src="images/heroimg.png" alt="FamilyTrip">
-            <div class="action">
-                <h3>Wanto to go on vacation?</h3>
-                <a href="ask-us.html">
-                    <button>Contact Us</button>
-                </a>
+
+        </div>
+
+        <div class="layout4">
+
+            <section>
+                <h2>FAQ's</h2>
+                <ul>
+                    <li><strong>Is it possible to take the family pet to the trip? </strong> It depends on the kind of
+                        pet, also, the travel destination.
+                        Some hotels are pet friendly, but caring a pet could become difficult in some places.</li>
+                    <li><strong>Children´s rates are the same adult´s rate? </strong> It depends on the hotel you choose
+                        to stay during your travel.
+                        Mostly, children´s rates are lower, so, don´t miss the chance!</li>
+                </ul>
+            </section>
+            <div id="feedback">
+                <h2>Send us a Message!</h2>
+                <form action="ask-us.php" method="post" target="_blank"
+                    onsubmit="setTimeout(function () { window.location.reload(); }, 10000)">
+                    <ul>
+                        <li>
+                            <label for="name"> Full Name:</label>
+                            <input type="text" id="name" name="full_name">
+                        </li>
+                        <li>
+                            <label for="mail">E-mail Address:</label>
+                            <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button2">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
-        </div>
-        <div class="headline">
-            <h1>Plan your family vacation´s with us!</h1>
-        </div>
-        <div class="layout">
             <section>
-                <div class="pic1">
-                    <img src="images/pic-1.png" width="290" alt="let´s plan your vacations">
-                </div>
-            </section>
-            <section>
-                <h2>About us</h2>
-                <p>We are a company dedicated to helping you find the best family travel destinations with children. We
-                    know that the budgets and the days available to take vacations can be limited, so we will offer you
-                    the orientation so that you can enjoy your vacations to the maximum according to your budget.</p>
-            </section>
-            <section>
-                <h2>What We Offer</h2>
-                <p>
-                    We guide you in the purchase of tickets according to the time of year in which the place you are
-                    interested in visiting is located, also regarding accommodation, and above all the places you can
-                    visit and the budget you should have according to the number and ages of the people with whom you
-                    are going to travel.</p>
-            </section>
-            <section>
-                <div class="pic2">
-                    <img src="images/pic-2.png" width="290" alt="family traveling">
-                </div>
+                <h2>Contact Information</h2>
+                <p> Need some help? Contact us below or send us a message on the side! Don't forget to follow us on
+                    social media for more recent content. </p>
+                <ul>
+                    <li><strong>Telephone:</strong> 943-013-234</li>
+                    <li><strong>Email:</strong> info@familytrip.com</li>
+                </ul>
             </section>
         </div>
     </main>
