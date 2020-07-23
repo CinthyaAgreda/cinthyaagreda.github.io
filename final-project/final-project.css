@@ -286,6 +286,7 @@ main section ul li {
     padding: 10px;
     margin: 30px auto;
     height: 200px;
+    text-align: center;
 }
 
 .card h3 {
@@ -293,6 +294,7 @@ main section ul li {
     margin: auto;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .card p {
@@ -304,7 +306,7 @@ main section ul li {
 
 .more {
     color: white;
-    background-color: #1571C6;
+    background-color:  #F77F00;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     line-height: 22px;
