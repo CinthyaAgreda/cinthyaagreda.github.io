@@ -1,13 +1,13 @@
 function poundsToKilograms() {
-    // INPUT VAL
-    let pounds = parsefloat(document.getElementById('pounds').value);
+    // INPUT
+    let pounds = parsefloat(document.getElementById("pounds").value);
     
     //PROCESSING
-    //convesion factor from pounds to kilograms is
-    let kilograms = 23463.125
-
+    //conversion factor from pounds to kilograms is
+    let kilograms = pounds * .453592
+    
     // OUTPUT
-    //document.getElementById(output).textContent = kilograms.toFixed(1) + ' kilograms ';
-    document.getElementById(output).textContent = '${kilograms.toFixed(1)} Kilograms';
+
+    document.getElementById("output").innerHTML = kilograms.toFixed(2) + "Kilograms";
 
 }
