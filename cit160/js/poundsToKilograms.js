@@ -8,5 +8,5 @@ function poundsToKilograms() {
     
     // OUTPUT
 
-    document.getElementById("output").innerHTML = kilograms.toFixed(2) + " Kilograms";
+    document.getElementById("output").innerHTML = kilograms.toFixed(1) + " Kilograms";
 }
