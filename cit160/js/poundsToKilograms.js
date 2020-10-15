@@ -1,6 +1,6 @@
 function poundsToKilograms() {
     // INPUT
-    let pounds = parsefloat(document.getElementById("pounds").value);
+    let pounds = parseFloat(document.getElementById("pounds").value);
     
     //PROCESSING
     //conversion factor from pounds to kilograms is
@@ -8,6 +8,5 @@ function poundsToKilograms() {
     
     // OUTPUT
 
-    document.getElementById("output").innerHTML = kilograms.toFixed(2) + "Kilograms";
-
+    document.getElementById("output").innerHTML = kilograms.toFixed(2) + " Kilograms";
 }
