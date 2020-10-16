@@ -10,18 +10,34 @@
 
 <body>
     <header>
-        <h1>Week 5: Convert Pounds To Kilograms</h1>
+        <h1>Week 5: Exam 1 - Part 2</h1>
         <h2>Cinthya Agreda</h2>
     </header>
     <main>
-        <h3>Pounds to Kilograms</h3>
+        <h3>Cylinder´s volume</h3>
         <label>Enter number of pounds: <input type="text" id="pounds"></label>
         <label><button type="button" onclick="poundsToKilograms()">Calculate Kilograms</button></label>
         <hr>
         <p><span id="output"></span></p>
-        <script src="js/poundsToKilograms.js"></script>
+        
     </main>
     <footer>
+        <script>
+function poundsToKilograms() {
+    // INPUT
+    let pounds = parseFloat(document.getElementById("pounds").value);
+    
+    //PROCESSING
+    //conversion factor from pounds to kilograms is
+    let kilograms = pounds * .453592
+    
+    // OUTPUT
+
+    document.getElementById("output").innerHTML = kilograms.toFixed(1) + " Kilograms";
+}
+
+
+        </script>
         &copy;2020 &bull; Cinthya Agreda &bull; BYU-Idaho &bull; CIT 160
     </footer>
 </body>

@@ -26,19 +26,18 @@
             let regular = parseFloat(document.getElementById("regular").value);
             let overtime = parseFloat(document.getElementById("overtime").value);
         
-            //PROCESSING
-            
+            // REGULAR AND OVERTIME PAY RATES
             let regWage = 15;
             let otWage = 22.50;
             
+            // PROCESS
             let regPay = regular * regWage;
             let otPay = overtime * otWage;
             let grossPay = regPay + otPay;
             let tax = grossPay * 0.15;
             let total = grossPay - tax; 
-           
         
-            //OUTPUT
+            //OUTPUT TOTAL PAYMENT AFTER TAX
             document.getElementById("output").innerHTML = "$" + total.toFixed(2);
         }
     </script>
