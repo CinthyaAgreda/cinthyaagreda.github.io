@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Week 5 Exam - Cinthya Agreda</title>
+    <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 5: Exam</h1>
+        <h2>Cinthya Agreda</h2>
+    </header>
+    <main>
+        <h3>Calculate After Tax Pay</h3>
+    <label>Enter Total Regular Hours: <input type="text" id="regular"></label>
+    <label>Enter Total Overtime Hours: <input type="text" id="overtime"></label>
+        <label><button type="button" onclick="afterTaxPayment()">Payment After Taxes</button></label>
+        <hr>
+        <p>Net Pay: <span id="output"></span></p>
+    </main>
+    <footer>
+        <script>
+        function afterTaxPayment() {
+            // INPUT
+            let regular = parseFloat(document.getElementById("regular").value);
+            let overtime = parseFloat(document.getElementById("overtime").value);
+        
+            //PROCESSING
+            
+            let regWage = 15;
+            let otWage = 22.50;
+            
+            let regPay = regular * regWage;
+            let otPay = overtime * otWage;
+            let grossPay = regPay + otPay;
+            let tax = grossPay * 0.15;
+            let total = grossPay - tax; 
+           
+        
+            //OUTPUT
+            document.getElementById("output").innerHTML = "$" + total.toFixed(2);
+        }
+    </script>
+        &copy;2020 &bull; Cinthya Agreda &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    </body>
+</html>
