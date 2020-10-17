@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIT 160 Pounds to Kilograms - Cinthya Agreda</title>
+    <title>Exam Part 2 - Cinthya Agreda</title>
     
 </head>
 
@@ -15,27 +15,27 @@
     </header>
     <main>
         <h3>Cylinder´s volume</h3>
-        <label>Enter number of pounds: <input type="text" id="pounds"></label>
-        <label><button type="button" onclick="poundsToKilograms()">Calculate Kilograms</button></label>
+        <label>Enter radio: <input type="text" id="radio"></label>
+        <label>Enter height: <input type="text" id="height"></label>
+        <label><button type="button" onclick="cylinderVolume()">ENTER</button></label>
         <hr>
-        <p><span id="output"></span></p>
-        
-    </main>
+        <p>Volume: <span id="output"></span></p>
+        </main>
     <footer>
         <script>
-function poundsToKilograms() {
+function cylinderVolume() {
     // INPUT
-    let pounds = parseFloat(document.getElementById("pounds").value);
+    let radio = parseFloat(document.getElementById("radio").value);
+    let height = parseFloat(document.getElementById("height").value);
     
     //PROCESSING
     //conversion factor from pounds to kilograms is
-    let kilograms = pounds * .453592
+    let volume = 3.1416 * Math.pow(radio ,2) * height;
     
     // OUTPUT
 
-    document.getElementById("output").innerHTML = kilograms.toFixed(1) + " Kilograms";
+    document.getElementById("output").innerHTML = volume.toFixed(1) + " Kilograms";
 }
-
 
         </script>
         &copy;2020 &bull; Cinthya Agreda &bull; BYU-Idaho &bull; CIT 160

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIT 160 Week 5 Exam - Cinthya Agreda</title>
-    
 </head>
 <body>
     <header>
@@ -13,35 +12,35 @@
     </header>
     <main>
         <h3>Calculate After Tax Pay</h3>
-    <label>Enter Total Regular Hours: <input type="text" id="regular"></label>
-    <label>Enter Total Overtime Hours: <input type="text" id="overtime"></label>
+        <label>Enter Total Regular Hours: <input type="text" id="regular"></label>
+        <label>Enter Total Overtime Hours: <input type="text" id="overtime"></label>
         <label><button type="button" onclick="afterTaxPayment()">Payment After Taxes</button></label>
         <hr>
         <p>Net Pay: <span id="output"></span></p>
     </main>
     <footer>
         <script>
-        function afterTaxPayment() {
-            // INPUT
-            let regular = parseFloat(document.getElementById("regular").value);
-            let overtime = parseFloat(document.getElementById("overtime").value);
-        
-            // REGULAR AND OVERTIME PAY RATES
-            let regWage = 15;
-            let otWage = 22.50;
-            
-            // PROCESS
-            let regPay = regular * regWage;
-            let otPay = overtime * otWage;
-            let grossPay = regPay + otPay;
-            let tax = grossPay * 0.15;
-            let total = grossPay - tax; 
-        
-            //OUTPUT TOTAL PAYMENT AFTER TAX
-            document.getElementById("output").innerHTML = "$" + total.toFixed(2);
-        }
-    </script>
+            function afterTaxPayment() {
+                // INPUT
+                let regular = parseFloat(document.getElementById("regular").value);
+                let overtime = parseFloat(document.getElementById("overtime").value);
+
+                // REGULAR AND OVERTIME PAY RATES
+                let regWage = 15;
+                let otWage = 22.50;
+
+                // PROCESS
+                let regPay = regular * regWage;
+                let otPay = overtime * otWage;
+                let grossPay = regPay + otPay;
+                let tax = grossPay * 0.15;
+                let total = grossPay - tax;
+
+                //OUTPUT TOTAL PAYMENT AFTER TAX
+                document.getElementById("output").innerHTML = "$" + total.toFixed(2);
+            }
+        </script>
         &copy;2020 &bull; Cinthya Agreda &bull; BYU-Idaho &bull; CIT 160
     </footer>
-    </body>
+</body>
 </html>
