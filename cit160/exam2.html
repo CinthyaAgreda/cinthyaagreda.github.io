@@ -29,12 +29,11 @@ function cylinderVolume() {
     let height = parseFloat(document.getElementById("height").value);
     
     //PROCESSING
-    //conversion factor from pounds to kilograms is
+    //Applying the formula for cylinder´s volume.
     let volume = 3.1416 * Math.pow(radio ,2) * height;
     
     // OUTPUT
-
-    document.getElementById("output").innerHTML = volume.toFixed(1) + " Kilograms";
+    document.getElementById("output").innerHTML = volume.toFixed(1);
 }
 
         </script>
