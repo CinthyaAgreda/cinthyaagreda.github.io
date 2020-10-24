@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title></title>
+
+</head>
+
+<body>                      
+Please enter the sales Amount: <input type="text" id="salestotal">
+<button type="button" onclick="computeCommiss()">Get Commission</button>
+<div id="output"></div>
+
+<script>
+    function computeCommission() {
+let sales = parseFloat(document.getElementById('salestotal').value);
+    // let rate;
+    // if (sales < 300) {
+    //     rate = 0;
+    // }
+    // else if (sales < 600) {
+    //     rate = 0.02;
+    // }
+    // else if (sales < 1000) {
+    //     rate = 0.025;
+    // }
+    // else {
+    //     rate = 0.03;
+    // }
+
+  
+
+
+
+
+
+    let commission = sales * rate;
+    let output = 'The employee earned ' + commission;
+    document.getElementById('output').innerHTML = output;
+}
+</script>
+</body>         
+</html>
