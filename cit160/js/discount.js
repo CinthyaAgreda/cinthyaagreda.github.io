@@ -4,7 +4,6 @@ function sales() {
         let dayOfWeek = new Date().getDay();
         let subtotal = parseFloat(document.getElementById("subtotal").value);
 
-    
     // Processing
     
         if (subtotal > 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
