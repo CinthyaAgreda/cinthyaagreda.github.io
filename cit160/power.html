@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Template Document - Cinthya Agreda</title>
+    <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 9: Exam</h1>
+        <h2>Cinthya Agreda</h2>
+    </header>
+    <main>
+        <h3>Powers of 2</h3>
+        <h4>(up to 31)</h4>
+    
+           <label>
+               <button type="button" onclick="powerOfTwo()">Calculate</button>
+            </label>
+        <hr>
+        <p>
+            <span id="output"></span></p>
+    </main>
+        <footer>
+        &copy;2020 &bull; Cinthya Agreda &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function powerOfTwo() {
+            //input
+            let i = 0
+            let power = "";
+            //process
+            while (i < 31) {
+                power += 2 ** i + ", ";
+                i++;
+            }
+            if (i == 31) {
+                power += 2**i;
+            }
+            //output
+            document.getElementById("output").innerHTML = power;
+
+        }
+        </script>
+    </body>
+</html>

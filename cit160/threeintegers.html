@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Template Document - Cinthya Agreda</title>
+    <link rel="stylesheet" href="css/style.css"> <!--external css reference-->
+</head>
+<body>
+    <header>
+        <h1>Week 9: Exam2</h1>
+        <h2>Cinthya Agreda</h2>
+    </header>
+    <main>
+        <h3>Three Integers</h3>
+        <label>Start Number:
+            <input type="text" id="one" size="5">
+         </label>
+         <label>End Number:
+            <input type="text" id="two" size="5">
+         </label>
+         <label>Divisor Number:
+            <input type="text" id="three" size="5">
+         </label>
+       <button type="button" onclick="threeIntegers()">Answer</button>
+         </label>
+         <div id="output"></div>
+        
+    </main>
+    <footer>
+        &copy;2020 &bull; Cinthya Agreda &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function threeIntegers() {
+                        
+            //input
+            
+            let start = parseInt(document.getElementById("one").value);
+            let end = parseInt(document.getElementById("two").value);
+            let divisor = parseInt(document.getElementById("three").value);
+            let output = "";
+
+            //Processing
+            
+            for (let i = start; i <= end; i++) {
+               if(i % divisor == 0) {
+                   output += i + " ";
+                }    
+            }
+            
+            //Output
+               document.getElementById("output").innerHTML =  output;
+            }
+        </script>
+    </body>
+</html>
